@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function App() {
   const handleSubmit = e => {
     e.preventDefault();
@@ -49,6 +51,7 @@ function App() {
             value="Submit"
           />
         </form>
+        <Link className='mx-auto p-2 mt-2 rounded text-white hover:bg-emerald-600 border border-solid bg-emerald-400 border-indigo-600' to='/users'>Go To User</Link>
       </div>
     </>
   );
