@@ -11,7 +11,7 @@ const Update = () => {
         const lastName = form.lastName.value
         const email = form.email.value
         const updateUser = {_id,firstName, lastName, email}
-        fetch(`http://localhost:3000/users/${user._id}`,{
+        fetch(`http://localhost:3000/users/${_id}`,{
         method: 'PUT',
         headers: {
             'content-type': 'application/json'
